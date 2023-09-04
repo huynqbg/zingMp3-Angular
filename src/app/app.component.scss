@@ -1,0 +1,27 @@
+// Body app
+.layout {
+    min-width: 768px;
+    background-color: var(--color-primary);
+}
+
+.has-player {
+    height: calc(100vh - 90px);
+}
+
+// Pages
+.main-page {
+    flex-grow: 1;
+    position: relative;
+    width: calc(100% - 570px);
+    min-height: 100%;
+    transition: margin-right .4s;
+}
+
+.section {
+    position: absolute;
+    inset: 0px;
+    overflow: hidden scroll;
+    margin-right: -6px;
+    margin-bottom: 0;
+}
+

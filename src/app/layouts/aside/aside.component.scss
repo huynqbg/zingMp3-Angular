@@ -1,0 +1,163 @@
+nav {
+    width: 100%;
+}
+
+.aside {
+    width: 240px;
+    z-index: 100;
+    background-color: var(--color-aside);
+    height: calc(100vh - var(--height-player));
+    padding-top: 70px;
+    padding-bottom: 54px;
+}
+
+// Begin Logo
+.aside-logo {
+    width: 240px;
+    height: 70px;
+    padding: 0 25px 0 28px;
+}
+
+.logo-img {
+    width: 120px;
+    height: 40px;
+    background: var(--logo-zing) 50%/ contain no-repeat;
+    display: inline-block;
+}
+
+.btn-logo {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+// Navbar-top 
+
+.navbar-menu {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+
+    color: var(--color-unactive);
+    border-left: 3px solid transparent;
+
+    a {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        padding: 12px 21px;
+        svg {
+            margin-right: 12px;
+        }
+    }
+
+    &:hover {
+        color: var(--color-white);
+    }
+}
+
+.navbar-item-link {
+    color: var(--color-unactive);
+
+    &:hover {
+        color: var(--color-white);
+    }
+}
+
+.aside-active {
+    color: var(--color-white);
+    border-left: 3px solid #9b4de0;
+    background-color: var(--hsla-primary);
+}
+
+.live-radio {
+    font-size: 7px;
+    padding: 3px 6px;
+    line-height: 1.5;
+}
+
+//tách sidebar top và sidebar between 
+
+.sidebar-divide {
+
+    position: relative;
+    height: 1px;
+
+    &::after {
+        content: "";
+        border-top: 1px solid var(--border-primary);
+        position: absolute;
+        left: 25px;
+        right: 25px;
+        top: 0;
+    }
+}
+
+// navbar-between
+.navbar-between {
+    position: absolute;
+    inset: 0px;
+    overflow: hidden scroll;
+    // margin-right: -5px;
+    margin-bottom: 0px;
+
+    &:hover::-webkit-scrollbar {
+        display: block;
+        width: 4px;
+    }
+}
+
+.vip-banner-sidebar {
+
+    padding: 15px 8px;
+    border-radius: 8px;
+    margin: 0 20px;
+    text-align: center;
+    width: 200px;
+    background-image: linear-gradient(117deg,#5a4be7,#c86dd7 102%);
+
+    div {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+}
+
+.btn-vip {
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: #ffdb00;
+    border-color: #ffdb00;
+    font-weight: 600;
+    padding: 6px 16px;
+    display: inline-block;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// add playlist 
+
+.add-playlist-sidebar {
+
+    .btn-add-playlist {
+        bottom: 90px;
+        height: 54px;
+        width: 240px;
+        left: 0;
+        border-radius: 0;
+        font-size: 14px;
+        border: 0;
+        border-top: 1px solid var(--border-primary);
+        font-weight: 500;
+        padding: 0 21px;
+        // color: #dadada;
+        background-color: #231b2e;
+    }
+}
+

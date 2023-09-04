@@ -1,0 +1,16 @@
+.home-page-content {
+    min-height: calc(100% - 158px);
+    margin-top: 70px;
+}
+
+.gallery {
+    padding-top: 32px;
+}
+
+.gallery-container {
+    height: 177.719px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin: 0 -15px 20px;
+    transition: height .2s;
+}
